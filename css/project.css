@@ -1,0 +1,170 @@
+/***** Global, utiliy *****/
+:root {
+  --header-footer-bg: #b45a1a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: verdana, arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/***** Header *****/
+header {
+  background-color: var(--header-footer-bg);
+  border-bottom: 10px solid #914915;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+header div {
+  background-color: #333;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: right;
+}
+
+h1,
+header p {
+  margin: 0;
+}
+
+/***** Main columns wrapper *****/
+#wrapper {
+  display: flex;
+}
+
+/***** Main, questions *****/
+main {
+  flex: 1 1 80%;
+  order: 2;
+  padding: 1rem;
+}
+
+
+/***** Question boxes *****/
+ol {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+li {
+  background-color: #ccc;
+  border-radius: 10px;
+  flex: 1 1 200px;
+  list-style-position: inside;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+
+/***** Answers *****/
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color: #556b2f;
+}
+
+ol div {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 1rem;
+}
+
+label {
+  background-color: #00008b;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  hyphens: auto;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  padding: .5rem;
+  width: 48%;
+}
+
+/***** buttons *****/
+section {
+  display: flex;
+}
+
+button {
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+  padding: .5rem;
+}
+
+#check {
+  flex: 1 1 80%;
+}
+
+#reset {
+  flex: 1 1 20%;
+}
+
+/***** Sidebar *****/
+aside {
+  background-color: #f2da9c;
+  border-right: 3px solid #a08f61;
+  display: flex;
+  flex: 1 1 20%;
+  flex-direction: column;
+  justify-content: space-between;
+  order: 1;
+  padding: 1rem;
+}
+
+aside h3 {
+  border-bottom: 1px dotted #333;
+  margin-bottom: 0;
+}
+
+aside p {
+  margin: 0 0 2rem;
+}
+
+/***** Footer *****/
+footer {
+  background-color: var(--header-footer-bg);
+  padding: 2rem;
+  text-align: right;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/***** 680px *****/
+@media all and (max-width: 680px) {
+  #wrapper {
+    flex-direction: column-reverse;
+  }
+
+  ol {
+    flex-direction: column;
+  }
+}
+
+/***********************************************
+Do not edit any code above this comment
+***********************************************/

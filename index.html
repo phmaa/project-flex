@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Project - Flex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/project.css" rel="stylesheet">
+    <script src="js/app.min.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Project Flex</h1>
+        <p>CSS Flexbox</p>
+      </div>
+    </header>
+
+    <div id="wrapper">
+      <main>
+        <h2>Flex Your Knowledge</h2>
+        <ol>
+          <li>What is the modern declaration to enable flexbox?
+            <div>
+              <input type="radio" name="modern-dec" id="a1-1">
+              <label for="a1-1"><code>display: flex;</code></label>
+              <input type="radio" name="modern-dec" id="a1-2">
+              <label for="a1-2"><code>display: flexbox;</code></label>
+              <input type="radio" name="modern-dec" id="a1-3">
+              <label for="a1-3"><code>display: box;</code></label>
+              <input type="radio" name="modern-dec" id="a1-4">
+              <label for="a1-4"><code>flex: flex;</code></label>
+            </div>
+          </li>
+
+          <li>What is the default order of all flex-items?
+            <div>
+              <input type="radio" name="order" id="a2-1">
+              <label for="a2-1">-1</label>
+              <input type="radio" name="order" id="a2-2">
+              <label for="a2-2">0</label>
+              <input type="radio" name="order" id="a2-3">
+              <label for="a2-3">1</label>
+              <input type="radio" name="order" id="a2-4">
+              <label for="a2-4">9999</label>
+            </div>
+          </li>
+
+          <li>When an element is flexed, what becomes the flex-items?
+            <div>
+              <input type="radio" name="flexitems" id="a3-1">
+              <label for="a3-1">siblings of the flexed element</label>
+              <input type="radio" name="flexitems" id="a3-2">
+              <label for="a3-2">children of the flexed element</label>
+              <input type="radio" name="flexitems" id="a3-3">
+              <label for="a3-3">descend&shy;ants of the flexed element</label>
+              <input type="radio" name="flexitems" id="a3-4">
+              <label for="a3-4">ancest&shy;ors of the flexed element</label>
+            </div>
+          </li>
+
+          <li>Which flex property arranges items along the main axis?
+            <div>
+              <input type="radio" name="main-align" id="a4-1">
+              <label for="a4-1"><code>align-content</code></label>
+              <input type="radio" name="main-align" id="a4-2">
+              <label for="a4-2"><code>align-items</code></label>
+              <input type="radio" name="main-align" id="a4-3">
+              <label for="a4-3"><code>justify-content</code></label>
+              <input type="radio" name="main-align" id="a4-4">
+              <label for="a4-4"><code>text-align</code></label>
+            </div>
+          </li>
+
+          <li>Which flex property arranges items as a single block along the secondary axis?
+            <div>
+              <input type="radio" name="block-align" id="a5-1">
+              <label for="a5-1"><code>align-content</code></label>
+              <input type="radio" name="block-align" id="a5-2">
+              <label for="a5-2"><code>align-items</code></label>
+              <input type="radio" name="block-align" id="a5-3">
+              <label for="a5-3"><code>justify-content</code></label>
+              <input type="radio" name="block-align" id="a5-4">
+              <label for="a5-4"><code>text-align</code></label>
+            </div>
+          </li>
+
+          <li>When set to <code>flex-direction: row</code>, what determines the default height of the columns?
+            <div>
+              <input type="radio" name="col-height" id="a6-1">
+              <label for="a6-1">The height of the item with the most content</label>
+              <input type="radio" name="col-height" id="a6-2">
+              <label for="a6-2">The height of the item with the least content</label>
+              <input type="radio" name="col-height" id="a6-3">
+              <label for="a6-3">The height of the flex-parent</label>
+              <input type="radio" name="col-height" id="a6-4">
+              <label for="a6-4">The height of the viewport</label>
+            </div>
+          </li>
+
+          <li>Which property is <b>not</b> represented by <code>flex</code> shorthand?
+            <div>
+              <input type="radio" name="flex-short" id="a7-1">
+              <label for="a7-1"><code>flex-basis</code></label>
+              <input type="radio" name="flex-short" id="a7-2">
+              <label for="a7-2"><code>flex-grow</code></label>
+              <input type="radio" name="flex-short" id="a7-3">
+              <label for="a7-3"><code>flex-shrink</code></label>
+              <input type="radio" name="flex-short" id="a7-4">
+              <label for="a7-4"><code>flex-size</code></label>
+            </div>
+          </li>
+
+          <li>Which property controls the height of individual flex-items when they are displayed in a row?
+            <div>
+              <input type="radio" name="free-space" id="a8-1">
+              <label for="a8-1"><code>align-content</code></label>
+              <input type="radio" name="free-space" id="a8-2">
+              <label for="a8-2"><code>align-items</code></label>
+              <input type="radio" name="free-space" id="a8-3">
+              <label for="a8-3"><code>order</code></label>
+              <input type="radio" name="free-space" id="a8-4">
+              <label for="a8-4"><code>flex</code></label>
+            </div>
+          </li>
+
+          <li>Which property must be applied to flex-items and not the flex-parent?
+            <div>
+              <input type="radio" name="multi-row" id="a9-1">
+              <label for="a9-1"><code>align-content</code></label>
+              <input type="radio" name="multi-row" id="a9-2">
+              <label for="a9-2"><code>align-items</code></label>
+              <input type="radio" name="multi-row" id="a9-3">
+              <label for="a9-3"><code>align-self</code></label>
+              <input type="radio" name="multi-row" id="a9-4">
+              <label for="a9-4"><code>justify-content</code></label>
+            </div>
+          </li>
+
+          <li>Which of the following is <b>not</b> a valid flex property?
+            <div>
+              <input type="radio" name="invalid" id="a10-1">
+              <label for="a10-1"><code>align-self</code></label>
+              <input type="radio" name="invalid" id="a10-2">
+              <label for="a10-2"><code>flex-flow</code></label>
+              <input type="radio" name="invalid" id="a10-3">
+              <label for="a10-3"><code>flex-wrap</code></label>
+              <input type="radio" name="invalid" id="a10-4">
+              <label for="a10-4"><code>justify-items</code></label>
+            </div>
+          </li>
+        </ol>
+        <section>
+          <button id="check">Check my answers</button>
+          <button id="reset">Reset</button>
+        </section>
+      </main>
+      <aside>
+        <h2>Topics</h2>
+
+        <div>
+          <h3>Font sizing</h3>
+          <p>Compare <code>body</code>, <code>html</code>, and <code>:root</code> selectors when used with <code>em</code> and <code>rem</code></p>
+        </div>
+
+        <div>
+          <h3>Variables</h3>
+          <p>Create CSS custom properties to improve code manageability</p>
+        </div>
+
+        <div>
+          <h3>Gradients</h3>
+          <p>Color gradients for backgrounds or text colors</p>
+        </div>
+
+        <div>
+          <h3>Flexbox</h3>
+          <p>Create responsive columns</p>
+        </div>
+
+        <div>
+          <h3>Grid</h3>
+          <p>Create responsive columns and rows with granular placement of items</p>
+        </div>
+
+        <div>
+          <h3>Responsive Images</h3>
+          <p>Feed the best image to devices based on device pixel density and image resolution</p>
+        </div>
+
+        <div>
+          <h3>Transitions, Transformations, and Animations</h3>
+          <p>Add micro-interactions to provide user feedback</p>
+        </div>
+
+        <div>
+          <h3>Pre-processing</h3>
+          <p>Learn a new high-efficiency language that generates CSS</p>
+        </div>
+
+        <div>
+          <h3>Filters</h3>
+          <p>Create artistic image effects with pure code and no need for an image editor</p>
+        </div>
+
+        <div>
+          <h3>Frameworks</h3>
+          <p>Use Bootstrap or another framework to streamline production</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <a href="../index.html#projects">Portfolio</a>
+    </footer>
+
+  </body>
+</html>
